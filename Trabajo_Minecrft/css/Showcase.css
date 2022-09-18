@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("../Minecraft_img/Fondo_de_la_web2.jpg");
+    color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Navegation */
+.nav-main {
+    background-color: #262626;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+/* Navbar Left */
+.nav-main .nav-menu {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    color: #a0e080;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    background-color: #262626;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+/* Responsive Button */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+    font-size: 1.5rem;
+}
+
+/* SHOWCASE */
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url("../Minecraft_img/Showcase_portada.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* CARDS BANNER */
+
+.cards-banner-option2 {
+    display: none;
+}
+
+.cards-banner-option1 {
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    color: #252525;
+}
+
+.cards-banner-one,
+.cards-banner-two,
+.cards-banner-tree,
+.cards-banner-four {
+    display: flex;
+    padding-top: 50px;
+
+}
+
+.content_right,
+.content_left {
+    width: 40%;
+    margin: 0px auto
+}
+
+.content_right {
+    float: right;
+}
+
+.content_left {
+    float: left;
+}
+
+.cards-banner-option1 p,
+.cards-banner-option1 h2 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.cards-banner-option1 h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cards-banner-option1 p {
+    font-size: 19px;
+}
+
+.img {
+    margin: 0px auto
+}
+
+.img_left,
+.img_right{
+    width: 500px;
+    height: 300px;
+}
+
+.img_right {
+    float: right;
+}
+
+.img_left {
+    float: left;
+}
+
+
+/* Footer */
+footer {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: black;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #00c3ff;
+    height: 1px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* Mobil */
+@media (max-width: 900px) {
+    .menu-btn {
+        display: block;
+        position: fixed;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url("../Minecraft_img/Fondo_de_la_web2.jpg");
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 35px;
+    }
+
+
+
+    /* CARDS BANNER */
+    .cards-banner-option1{
+        display: none;
+    }
+    .cards-banner-option2{
+        display: inline-block;
+        width: 100%;
+        background: #ffffff;
+        margin-bottom: 40px;
+        padding-bottom: 50px;
+        color: #252525;
+    }
+
+    .cards-banner-one,
+    .cards-banner-two,
+    .cards-banner-tree,
+    .cards-banner-four{
+        display: block;
+        text-align: center;
+    }
+
+    .content_left,
+    .content_right {
+        margin: 0px auto;
+        float: none;
+        width: 80%;
+    }
+
+    .cards-banner-option2 p,
+    .cards-banner-option2 h2 {
+        text-align: center;
+    }
+
+    .cards-banner-option2 h2 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .cards-banner-option2 p {
+        font-size: 19px;
+    }
+
+    .img {
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    /* CARDS BANNER */
+    .content_left,
+    .content_right {
+        margin: 0px auto;
+        width: 90%;
+    }
+
+    .img {
+        width: 400px;
+        height: 230px;
+    }
+
+}
